@@ -3,7 +3,7 @@ const Discord = require("discord.js");
 const DisTube = require("distube");
 const client = new Discord.Client({disableMentions: "everone"});
 const config = {
-    prefix: "!",
+    prefix: "c",
     token: "ODA1ODMyMTU1NjQ4MzYwNDQ5.YBgnrQ.LIqef5LokZCTWsUoJjrtS-8FNDQ"
 }
 const distube = new DisTube(client, {searchSongs: true, emitNewSongOnly: true, highWaterMark: 1<<25})
@@ -22,6 +22,7 @@ client.on("ready", () =>{
 client.on("message", message => {
     if(message.author.bot){ return; }
     if(!message.guild) return;
+    if(!message.content.startsWith(preffix)) return;
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift();
 
