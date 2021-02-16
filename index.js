@@ -20,6 +20,9 @@ client.on("ready", () =>{
 })
 
 client.on("message", message => {
+    if(message.content == 'help') {
+        message.reply('lol');
+    }
     if(message.author.bot){ return; }
     if(!message.guild) return;
     if(!message.content.startsWith(preffix)) return;
