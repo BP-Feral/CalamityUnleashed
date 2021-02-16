@@ -51,14 +51,18 @@ client.on("message", message => {
 
 <:terraria_duck:803681992214183936> Daca intampinati probleme, contactati stafful nostru folosind tagul <@&803674164355399721> `)
     }
-    
-    if(command === "recipe") {
-        return embedbuilder(client, message ,`YELLOW`, "Soul of Eternity command",
-    `https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/5/54/Soul_of_Eternity_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/138?cb=20201028223538
-     https://terrariamods.gamepedia.com/Fargo%27s_Mod/Soul_of_Eternity
-     Is made out of
-    https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/5/54/Soul_of_the_Universe_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/70?cb=20201028223945 Soul of the Universe
-    https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/0/00/Soul_of_Dimensions_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/66?cb=20190104013928 Soul of Dimensions`)
+    if (command === "help" || command === "h"){
+        embedbuilder(client, message, "BLACK", "Commands List", 
+        `play / p - seach for a music then pick a number
+         skip / s - skip the playing song
+         stop / leave - quit the channel
+         seek - seek the song
+         volume / vol - change the music volume
+         queue / qu - check the queue list
+         loop / repeat - toggle loop mode
+         jump - skip some parts
+  
+         update - show modded server info`)
     }
 
     if(command === "play" || command === "p"){
