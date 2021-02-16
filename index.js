@@ -25,7 +25,11 @@ client.on("message", message => {
     const command = args.shift();
     
     if(command === "update") {
-        return embedbuilder(client, message, `PURPLE`, "lol",  `lol2`)
+        return embedbuilder(client, message, `PURPLE`, "lol",  
+    `lol2
+     awkfwaf
+      
+     awfj`)
     }
     if(command === "ping"){
         return embedbuilder(client, message, `sBLUE`, `PING:`, `\`${client.ws.ping} ms\``)
