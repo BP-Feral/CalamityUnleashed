@@ -26,10 +26,32 @@ client.on("message", message => {
     
     if(command === "update") {
         return embedbuilder(client, message, `PURPLE`, "lol",  
-    `lol2
-     awkfwaf
-      
-     awfj`)
+    `Daca doriti sa va alaturati serverului nostru de terraria modat parcurgeti urmatorii pasi: 
+
+<:terraria_lastprism:803681992348532756> Obtineti ultima versiune de Terraria de pe Steam sau GOG
+    - https://store.steampowered.com/app/105600/Terraria/
+    - https://www.gog.com/game/terraria
+
+<:terraria_lastprism:803681992348532756> Instalati tModLoader folosind Steam, sau pagina oficiala
+    - https://store.steampowered.com/app/1281930/tModLoader/
+    - https://tmodloader.net/
+
+<:terraria_lastprism:803681992348532756> Descarcati tModLoader 64 bit folosind urmatorul link: 
+    - https://mega.nz/folder/c8oVyIBJ#FIoQVbg4IQ1HQ2BZpQoyGA/file/Uw5UhLZY
+       (Descarcati doar arhiva "tML 64 0.11.8.zip")
+
+<:terraria_lastprism:803681992348532756>  Extrageti arhiva descarcata in folderul instalat de tModLoader
+     - Steam: C:\Program Files (x86)\Steam\steamapps\common\tModLoader
+     - GOG:   C:\GOG\tModLoader
+
+<:terraria_lastprism:803681992348532756> Folositi "tModLoader64bit.exe" care a fost extras in folderul tModLoader pentru a deschide jocul pe viitor
+
+<:terraria_lastprism:803681992348532756> Instalati Radmin VPN https://www.radmin-vpn.com/
+     - Folositi radmin VPN pentru a accesa reteaua "starbound127" folosind parola "tmodloader"
+
+<:terraria_lastprism:803681992348532756> Acum va puteti conecta la serverul nostru de terraria modat, folosind adresa 26.31.113.148 / localhost si portul 7777
+
+<:terraria_duck:803681992214183936> Daca intampinati probleme, contactati stafful nostru folosind tagul <@&803674164355399721> `)
     }
     if(command === "ping"){
         return embedbuilder(client, message, `sBLUE`, `PING:`, `\`${client.ws.ping} ms\``)
