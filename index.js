@@ -1,12 +1,12 @@
 //configuration 
 const Discord = require("discord.js");
-//const DisTube = require("distube");
+const DisTube = require("distube");
 const client = new Discord.Client({disableMentions: "everone"});
 const token = "ODA1ODMyMTU1NjQ4MzYwNDQ5.YBgnrQ.QhC-CB2oAyUzF9Hws0-pi1ZUUpg"
 const prefix = "calamity ";
 
-//const distube = new DisTube(client, {searchSongs: true, emitNewSongOnly: true, highWaterMark: 1<<25})
-//const filters = ["3d","bassboost","echo","karaoke","nightcore","vaporwave","flanger"];
+const distube = new DisTube(client, {searchSongs: true, emitNewSongOnly: true, highWaterMark: 1<<25})
+const filters = ["3d","bassboost","echo","karaoke","nightcore","vaporwave","flanger"];
 //events
 
 client.login(token);
