@@ -22,7 +22,7 @@ client.on("ready", () =>{
 client.on("message", message => {
     if(message.author.bot){ return; }
     if(!message.guild) return;
-    if(!message.content.startsWith(preffix)) return;
+    if(!message.content.startsWith(prefix)) return;
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift();
     
