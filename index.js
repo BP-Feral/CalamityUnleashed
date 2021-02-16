@@ -39,8 +39,8 @@ client.on("message", message => {
        (Descarcati doar arhiva "tML 64 0.11.8.zip")
 
 <:terraria_lastprism:803681992348532756>  Extrageti arhiva descarcata in folderul instalat de tModLoader
-     - Steam: C:\Program Files (x86)\Steam\steamapps\common\tModLoader
-     - GOG:   C:\GOG\tModLoader
+     - Steam: C:/Program Files (x86)/Steam/steamapps/common/tModLoader
+     - GOG:   C:/GOG/tModLoader
 
 <:terraria_lastprism:803681992348532756> Folositi "tModLoader64bit.exe" care a fost extras in folderul tModLoader pentru a deschide jocul pe viitor
 
@@ -52,6 +52,14 @@ client.on("message", message => {
 <:terraria_duck:803681992214183936> Daca intampinati probleme, contactati stafful nostru folosind tagul <@&803674164355399721> `)
     }
     
+    if(command.toLowerCase() === "soul of eternity") {
+        return embedbuilder(client, message `YELLOW`, "Soul of Eternity",
+    `https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/5/54/Soul_of_Eternity_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/138?cb=20201028223538
+     https://terrariamods.gamepedia.com/Fargo%27s_Mod/Soul_of_Eternity
+     Is made out of
+    https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/5/54/Soul_of_the_Universe_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/70?cb=20201028223945 Soul of the Universe
+    https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/0/00/Soul_of_Dimensions_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/66?cb=20190104013928 Soul of Dimensions
+    }
     if(command === "ping"){
         return embedbuilder(client, message, `sBLUE`, `PING:`, `\`${client.ws.ping} ms\``)
     }
