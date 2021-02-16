@@ -13,7 +13,7 @@ client.login(token);
 
 client.on("ready", () =>{ 
     console.log(`Bot has started as : ${client.user.tag}`);
-    client.user.setActivity("!play",{type: "LISTENING"});
+    client.user.setActivity("calamity help",{type: "LISTENING"});
 })
 
 client.on("message", message => {
@@ -25,10 +25,8 @@ client.on("message", message => {
     const command = args.shift();
     
     if(command === "update") {
-        return embedbuilder(client, message, `PURPLE`, "lol",  
-    `Daca doriti sa va alaturati serverului nostru de terraria modat parcurgeti urmatorii pasi: 
-
-<:terraria_lastprism:803681992348532756> Obtineti ultima versiune de Terraria de pe Steam sau GOG
+        return embedbuilder(client, message, `PURPLE`, "Daca doriti sa va alaturati serverului nostru de terraria modat parcurgeti urmatorii pasi:",  
+    `<:terraria_lastprism:803681992348532756> Obtineti ultima versiune de Terraria de pe Steam sau GOG
     - https://store.steampowered.com/app/105600/Terraria/
     - https://www.gog.com/game/terraria
 
@@ -53,6 +51,7 @@ client.on("message", message => {
 
 <:terraria_duck:803681992214183936> Daca intampinati probleme, contactati stafful nostru folosind tagul <@&803674164355399721> `)
     }
+    
     if(command === "ping"){
         return embedbuilder(client, message, `sBLUE`, `PING:`, `\`${client.ws.ping} ms\``)
     }
