@@ -1,18 +1,15 @@
 //configuration 
 const Discord = require("discord.js");
-const DisTube = require("distube");
+//const DisTube = require("distube");
 const client = new Discord.Client({disableMentions: "everone"});
-const config = {
-    prefix: "c",
-    token: "ODA1ODMyMTU1NjQ4MzYwNDQ5.YBgnrQ.QhC-CB2oAyUzF9Hws0-pi1ZUUpg"
-}
-const distube = new DisTube(client, {searchSongs: true, emitNewSongOnly: true, highWaterMark: 1<<25})
+const token = "ODA1ODMyMTU1NjQ4MzYwNDQ5.YBgnrQ.QhC-CB2oAyUzF9Hws0-pi1ZUUpg"
+const prefix = "calamity ";
 
-const filters = ["3d","bassboost","echo","karaoke","nightcore","vaporwave","flanger"];
-
-
+//const distube = new DisTube(client, {searchSongs: true, emitNewSongOnly: true, highWaterMark: 1<<25})
+//const filters = ["3d","bassboost","echo","karaoke","nightcore","vaporwave","flanger"];
 //events
-client.login(config.token);
+
+client.login(token);
 
 client.on("ready", () =>{ 
     console.log(`Bot has started as : ${client.user.tag}`);
@@ -20,9 +17,10 @@ client.on("ready", () =>{
 })
 
 client.on("message", message => {
-    if(message.author.bot){ return; }
+    if(message.author.bot) return;
     if(!message.guild) return;
     if(!message.content.startsWith(prefix)) return;
+    
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift();
     
