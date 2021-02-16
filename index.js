@@ -52,24 +52,13 @@ client.on("message", message => {
 <:terraria_duck:803681992214183936> Daca intampinati probleme, contactati stafful nostru folosind tagul <@&803674164355399721> `)
     }
     
-    if(command === "soul of eternity") {
+    if(command === "recipe soul of eternity") {
         return embedbuilder(client, message `YELLOW`, "Soul of Eternity command",
     `https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/5/54/Soul_of_Eternity_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/138?cb=20201028223538
      https://terrariamods.gamepedia.com/Fargo%27s_Mod/Soul_of_Eternity
      Is made out of
     https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/5/54/Soul_of_the_Universe_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/70?cb=20201028223945 Soul of the Universe
     https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/0/00/Soul_of_Dimensions_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/66?cb=20190104013928 Soul of Dimensions`)
-    }
-     if(command.content.toLowerCase() === "soul of eternity") {
-        return embedbuilder(client, message `YELLOW`, "Soul of Eternity lowercase",
-    `https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/5/54/Soul_of_Eternity_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/138?cb=20201028223538
-     https://terrariamods.gamepedia.com/Fargo%27s_Mod/Soul_of_Eternity
-     Is made out of
-    https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/5/54/Soul_of_the_Universe_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/70?cb=20201028223945 Soul of the Universe
-    https://static.wikia.nocookie.net/terrariamods_gamepedia_en/images/0/00/Soul_of_Dimensions_%28Fargo%27s_Mod%29.gif/revision/latest/scale-to-width-down/66?cb=20190104013928 Soul of Dimensions`)
-    }
-    if(command === "ping"){
-        return embedbuilder(client, message, `sBLUE`, `PING:`, `\`${client.ws.ping} ms\``)
     }
 
     if(command === "play" || command === "p"){
