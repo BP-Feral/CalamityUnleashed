@@ -20,15 +20,15 @@ client.on("ready", () =>{
 })
 
 client.on("message", message => {
-    if(message.content == 'help') {
-        message.reply('lol');
-    }
     if(message.author.bot){ return; }
     if(!message.guild) return;
     if(!message.content.startsWith(preffix)) return;
     const args = message.content.slice(config.prefix.length).trim().split(/ +/g);
     const command = args.shift();
-
+    
+    if(command === "update") {
+        return embedbuilder(client, message, `PURPLE`, "lol",  `lol2`)
+    }
     if(command === "ping"){
         return embedbuilder(client, message, `sBLUE`, `PING:`, `\`${client.ws.ping} ms\``)
     }
